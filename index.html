@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JT Barber — Maringá, PR</title>
+  <meta name="description" content="JT Barber — barbeiro em Maringá, PR. Cortes, degradê, barba e design. Solicite sua disponibilidade." />
+  <meta name="theme-color" content="#0b0907" />
+  <link rel="icon" href="assets/logo.png" />
+  <meta property="og:title" content="JT Barber — Maringá, PR" />
+  <meta property="og:image" content="assets/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="is-loading">
+
+  <!-- LOADER -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader__pole"><span></span></div>
+    <div class="loader__brand">JT<span>.</span>BARBER</div>
+    <div class="loader__bar"><i></i></div>
+  </div>
+
+  <div class="cursor" aria-hidden="true"></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- HEADER -->
+  <header class="header">
+    <a href="#top" class="brand">
+      <img src="assets/logo.png" alt="JT Barber logo" width="44" height="44" />
+      <span>JT<b>.</b>BARBER</span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="#services" data-i18n="nav.services">Serviços</a>
+      <a href="#gallery" data-i18n="nav.gallery">Galeria</a>
+      <a href="#about" data-i18n="nav.about">Sobre</a>
+      <a href="#booking" data-i18n="nav.booking">Disponibilidade</a>
+      <a href="#contact" data-i18n="nav.contact">Contato</a>
+    </nav>
+    <div class="header__right">
+      <div class="lang">
+        <button class="lang__btn" aria-haspopup="true" aria-expanded="false"><span class="lang__cur">PT</span> ▾</button>
+        <ul class="lang__menu">
+          <li><button data-lang="pt">🇧🇷 Português</button></li>
+          <li><button data-lang="en">🇺🇸 English</button></li>
+          <li><button data-lang="fr">🇫🇷 Français</button></li>
+          <li><button data-lang="ht">🇭🇹 Kreyòl</button></li>
+        </ul>
+      </div>
+      <a href="#booking" class="btn btn--small magnetic" data-i18n="nav.cta">Agendar</a>
+      <button class="burger" aria-label="Menu"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero__bg" data-parallax="0.25">
+        <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=1800&q=70" alt="" />
+      </div>
+      <div class="hero__shade"></div>
+      <div class="hero__inner">
+        <p class="eyebrow reveal-up"><span class="dot"></span> <span data-i18n="hero.eyebrow">Barbeiro • Maringá, PR • Brasil</span></p>
+        <h1 class="hero__title">
+          <span class="line"><span class="word">FRESH</span></span>
+          <span class="line"><span class="word outline">CUTS</span> <span class="word script" data-i18n="hero.by">por</span></span>
+          <span class="line"><span class="word gold">JT.BARBER</span></span>
+        </h1>
+        <p class="hero__lead reveal-up" data-i18n="hero.lead">Degradê, navalhado, barba e desenho. Cada corte feito com precisão — sonhe grande, trabalhe duro.</p>
+        <div class="hero__actions reveal-up">
+          <a href="#booking" class="btn magnetic"><span data-i18n="hero.cta1">Solicitar disponibilidade</span> <i>→</i></a>
+          <a href="#gallery" class="btn btn--ghost magnetic" data-i18n="hero.cta2">Ver trabalhos</a>
+        </div>
+      </div>
+      <div class="hero__badge" aria-hidden="true">
+        <svg viewBox="0 0 200 200"><defs><path id="circ" d="M100,100 m-78,0 a78,78 0 1,1 156,0 a78,78 0 1,1 -156,0"/></defs>
+          <text><textPath href="#circ">• RÊVE GRAND • TRAVAY DI • JT BARBER • MARINGÁ PR </textPath></text></svg>
+        <img src="assets/logo.png" alt="" />
+      </div>
+      <a href="#marquee" class="scroll-hint" aria-label="scroll"><span></span></a>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" id="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>FADE</span><b>✦</b><span>TAPER</span><b>✦</b><span>BARBA</span><b>✦</b><span>LINE UP</span><b>✦</b><span>FREESTYLE</span><b>✦</b><span>NAVALHA</span><b>✦</b>
+        <span>FADE</span><b>✦</b><span>TAPER</span><b>✦</b><span>BARBA</span><b>✦</b><span>LINE UP</span><b>✦</b><span>FREESTYLE</span><b>✦</b><span>NAVALHA</span><b>✦</b>
+      </div>
+    </div>
+
+    <!-- STATS -->
+    <section class="stats">
+      <div class="stat reveal-up"><strong data-count="500">0</strong><span>+</span><p data-i18n="stats.cuts">cortes realizados</p></div>
+      <div class="stat reveal-up"><strong data-count="5">0</strong><span>★</span><p data-i18n="stats.rating">avaliação dos clientes</p></div>
+      <div class="stat reveal-up"><strong data-count="4">0</strong><p data-i18n="stats.langs">idiomas falados</p></div>
+      <div class="stat reveal-up"><strong data-count="100">0</strong><span>%</span><p data-i18n="stats.passion">paixão</p></div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section services" id="services">
+      <div class="section__head">
+        <p class="kicker reveal-up">01 — <span data-i18n="services.kicker">Serviços</span></p>
+        <h2 class="section__title split" data-i18n="services.title">O que eu faço</h2>
+      </div>
+      <div class="cards">
+        <article class="card tilt reveal-up">
+          <div class="card__icon">✂</div>
+          <h3 data-i18n="services.s1.t">Corte Degradê</h3>
+          <p data-i18n="services.s1.d">Low, mid ou high fade com acabamento limpo e transição perfeita.</p>
+          <span class="card__time">~ 45 min</span>
+        </article>
+        <article class="card tilt reveal-up">
+          <div class="card__icon">🪒</div>
+          <h3 data-i18n="services.s2.t">Barba & Navalha</h3>
+          <p data-i18n="services.s2.d">Modelagem da barba, toalha quente e acabamento na navalha.</p>
+          <span class="card__time">~ 30 min</span>
+        </article>
+        <article class="card tilt reveal-up">
+          <div class="card__icon">✦</div>
+          <h3 data-i18n="services.s3.t">Corte + Barba</h3>
+          <p data-i18n="services.s3.d">O combo completo para sair renovado da cadeira.</p>
+          <span class="card__time">~ 70 min</span>
+        </article>
+        <article class="card tilt reveal-up">
+          <div class="card__icon">〰</div>
+          <h3 data-i18n="services.s4.t">Desenho / Freestyle</h3>
+          <p data-i18n="services.s4.d">Riscos e desenhos personalizados para dar estilo ao seu corte.</p>
+          <span class="card__time">~ 15 min</span>
+        </article>
+        <article class="card tilt reveal-up">
+          <div class="card__icon">◎</div>
+          <h3 data-i18n="services.s5.t">Pigmentação & Line up</h3>
+          <p data-i18n="services.s5.d">Contorno marcado e pigmentação para um visual sempre afiado.</p>
+          <span class="card__time">~ 20 min</span>
+        </article>
+        <article class="card tilt reveal-up">
+          <div class="card__icon">⌂</div>
+          <h3 data-i18n="services.s6.t">Atendimento a domicílio</h3>
+          <p data-i18n="services.s6.d">Sob consulta: eu vou até você, em casa ou no evento.</p>
+          <span class="card__time" data-i18n="services.ask">sob consulta</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="section gallery" id="gallery">
+      <div class="section__head">
+        <p class="kicker reveal-up">02 — <span data-i18n="gallery.kicker">Galeria</span></p>
+        <h2 class="section__title split" data-i18n="gallery.title">Inspirações & trabalhos</h2>
+        <p class="section__sub reveal-up" data-i18n="gallery.sub">Estilos que eu faço — mande sua referência e a gente cria juntos.</p>
+      </div>
+      <div class="grid">
+        <figure class="g g--tall reveal-img"><img loading="lazy" src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=900&q=70" alt="Fade haircut" /><figcaption>Skin Fade</figcaption></figure>
+        <figure class="g reveal-img"><img loading="lazy" src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=900&q=70" alt="Barber at work" /><figcaption>Precision</figcaption></figure>
+        <figure class="g reveal-img"><img loading="lazy" src="assets/tiktok4.jpg" alt="JT Barber cuts" /><figcaption>@jt.barber6</figcaption></figure>
+        <figure class="g g--wide reveal-img"><img loading="lazy" src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=1200&q=70" alt="Barbershop" /><figcaption>The Chair</figcaption></figure>
+        <figure class="g reveal-img"><img loading="lazy" src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=900&q=70" alt="Beard trim" /><figcaption>Beard</figcaption></figure>
+        <figure class="g g--tall reveal-img"><img loading="lazy" src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?auto=format&fit=crop&w=900&q=70" alt="Haircut detail" /><figcaption>Line Up</figcaption></figure>
+        <figure class="g reveal-img"><img loading="lazy" src="https://images.unsplash.com/photo-1567894340315-735d7c361db0?auto=format&fit=crop&w=900&q=70" alt="Clippers" /><figcaption>Tools</figcaption></figure>
+        <figure class="g reveal-img"><img loading="lazy" src="https://images.unsplash.com/photo-1512690459411-b9245aed614b?auto=format&fit=crop&w=900&q=70" alt="Barber chair" /><figcaption>Studio</figcaption></figure>
+      </div>
+      <div class="center reveal-up">
+        <a class="btn btn--ghost magnetic" href="https://www.tiktok.com/@jt.barber6" target="_blank" rel="noopener" data-i18n="gallery.more">Mais vídeos no TikTok</a>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+      <div class="about__media reveal-img">
+        <img src="https://images.unsplash.com/photo-1593702275687-f8b402bf1fb5?auto=format&fit=crop&w=1000&q=70" alt="Barber" loading="lazy" />
+        <div class="about__logo"><img src="assets/logo.png" alt="" /></div>
+      </div>
+      <div class="about__text">
+        <p class="kicker reveal-up">03 — <span data-i18n="about.kicker">Sobre</span></p>
+        <h2 class="section__title split" data-i18n="about.title">Rêve grand. Travay di.</h2>
+        <p class="reveal-up" data-i18n="about.p1">Sou o JT, barbeiro em Maringá, PR. Minha história começou com uma máquina, um espelho e muita vontade de vencer. Hoje, cada cliente que senta na minha cadeira recebe o mesmo cuidado: atenção aos detalhes, conversa boa e um corte que dá confiança.</p>
+        <p class="reveal-up" data-i18n="about.p2">“Juste moi ✨” — sem atalhos, só trabalho, disciplina e estilo. Falo português, francês, crioulo haitiano e inglês: aqui todo mundo se sente em casa.</p>
+        <ul class="ticks reveal-up">
+          <li data-i18n="about.l1">Material higienizado a cada cliente</li>
+          <li data-i18n="about.l2">Horário marcado, sem espera</li>
+          <li data-i18n="about.l3">Ambiente acolhedor e multicultural</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="section process">
+      <div class="section__head">
+        <p class="kicker reveal-up">04 — <span data-i18n="process.kicker">Como funciona</span></p>
+        <h2 class="section__title split" data-i18n="process.title">3 passos simples</h2>
+      </div>
+      <ol class="steps">
+        <li class="reveal-up"><b>01</b><h3 data-i18n="process.s1.t">Envie seu pedido</h3><p data-i18n="process.s1.d">Escolha o serviço, o dia e o horário que preferir no formulário.</p></li>
+        <li class="reveal-up"><b>02</b><h3 data-i18n="process.s2.t">Confirmação</h3><p data-i18n="process.s2.d">Eu confirmo sua disponibilidade pelo WhatsApp ou e-mail.</p></li>
+        <li class="reveal-up"><b>03</b><h3 data-i18n="process.s3.t">Sente e relaxe</h3><p data-i18n="process.s3.d">Chegue na hora e saia com o visual renovado.</p></li>
+      </ol>
+    </section>
+
+    <!-- BOOKING -->
+    <section class="section booking" id="booking">
+      <div class="booking__intro">
+        <p class="kicker reveal-up">05 — <span data-i18n="booking.kicker">Disponibilidade</span></p>
+        <h2 class="section__title split" data-i18n="booking.title">Solicite seu horário</h2>
+        <p class="reveal-up" data-i18n="booking.sub">Preencha o formulário. Sua solicitação é enviada direto para o meu WhatsApp (ou e-mail) e eu respondo o mais rápido possível.</p>
+        <div class="hours reveal-up">
+          <h4 data-i18n="booking.hours">Horários</h4>
+          <p><span data-i18n="booking.week">Seg – Sáb</span><b>09:00 – 20:00</b></p>
+          <p><span data-i18n="booking.sun">Domingo</span><b data-i18n="booking.ask">Sob consulta</b></p>
+        </div>
+      </div>
+      <form class="form reveal-up" id="bookingForm" novalidate>
+        <div class="field">
+          <input id="f-name" name="name" required placeholder=" " autocomplete="name" />
+          <label for="f-name" data-i18n="form.name">Seu nome</label>
+        </div>
+        <div class="field">
+          <input id="f-phone" name="phone" type="tel" required placeholder=" " autocomplete="tel" />
+          <label for="f-phone" data-i18n="form.phone">WhatsApp / Telefone</label>
+        </div>
+        <div class="field field--full">
+          <select id="f-service" name="service" required>
+            <option value="" data-i18n="form.choose">Escolha o serviço</option>
+            <option data-i18n="services.s1.t">Corte Degradê</option>
+            <option data-i18n="services.s2.t">Barba & Navalha</option>
+            <option data-i18n="services.s3.t">Corte + Barba</option>
+            <option data-i18n="services.s4.t">Desenho / Freestyle</option>
+            <option data-i18n="services.s5.t">Pigmentação & Line up</option>
+            <option data-i18n="services.s6.t">Atendimento a domicílio</option>
+          </select>
+          <label for="f-service" class="label--static" data-i18n="form.service">Serviço</label>
+        </div>
+        <div class="field">
+          <input id="f-date" name="date" type="date" required />
+          <label for="f-date" class="label--static" data-i18n="form.date">Data</label>
+        </div>
+        <div class="field field--slots">
+          <span class="label--static" data-i18n="form.time">Horário preferido</span>
+          <div class="slots" id="slots"></div>
+        </div>
+        <div class="field field--full">
+          <textarea id="f-msg" name="msg" rows="3" placeholder=" "></textarea>
+          <label for="f-msg" data-i18n="form.msg">Mensagem / referência (opcional)</label>
+        </div>
+        <p class="form__error" id="formError" role="alert"></p>
+        <div class="form__actions field--full">
+          <button type="submit" class="btn magnetic" data-via="wa"><span data-i18n="form.sendWa">Enviar pelo WhatsApp</span> <i>→</i></button>
+          <button type="submit" class="btn btn--ghost magnetic" data-via="mail" data-i18n="form.sendMail">Enviar por e-mail</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="section__head">
+        <p class="kicker reveal-up">06 — <span data-i18n="contact.kicker">Contato</span></p>
+        <h2 class="section__title split" data-i18n="contact.title">Fale comigo</h2>
+      </div>
+      <div class="contact__grid">
+        <a class="ccard reveal-up" href="https://wa.me/554497547645" target="_blank" rel="noopener">
+          <span class="ccard__ic">✆</span><small>WhatsApp</small><strong>+55 44 9754-7645</strong>
+        </a>
+        <a class="ccard reveal-up" href="tel:+554497547645">
+          <span class="ccard__ic">☎</span><small data-i18n="contact.call">Ligar</small><strong>+55 44 9754-7645</strong>
+        </a>
+        <a class="ccard reveal-up" href="mailto:Toussaintjeffson98@gmail.com">
+          <span class="ccard__ic">✉</span><small data-i18n="contact.support">Suporte</small><strong>Toussaintjeffson98@gmail.com</strong>
+        </a>
+        <a class="ccard reveal-up" href="https://www.tiktok.com/@jt.barber6" target="_blank" rel="noopener">
+          <span class="ccard__ic">♪</span><small>TikTok</small><strong>@jt.barber6</strong>
+        </a>
+        <a class="ccard reveal-up" href="https://www.instagram.com/jefphaka47" target="_blank" rel="noopener">
+          <span class="ccard__ic">◎</span><small>Instagram</small><strong>@jefphaka47</strong>
+        </a>
+        <div class="ccard reveal-up">
+          <span class="ccard__ic">⌖</span><small data-i18n="contact.where">Localização</small><strong>Maringá, PR — Brasil</strong>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section faq">
+      <div class="section__head">
+        <p class="kicker reveal-up">07 — FAQ</p>
+        <h2 class="section__title split" data-i18n="faq.title">Perguntas frequentes</h2>
+      </div>
+      <div class="faq__list">
+        <details class="reveal-up"><summary data-i18n="faq.q1">Preciso marcar horário?</summary><p data-i18n="faq.a1">Sim, é recomendado. Envie uma solicitação de disponibilidade e eu confirmo o seu horário.</p></details>
+        <details class="reveal-up"><summary data-i18n="faq.q2">Quais formas de pagamento?</summary><p data-i18n="faq.a2">Pix, dinheiro e cartão.</p></details>
+        <details class="reveal-up"><summary data-i18n="faq.q3">Posso levar uma foto de referência?</summary><p data-i18n="faq.a3">Claro! Mande a foto pelo WhatsApp junto com o seu pedido.</p></details>
+        <details class="reveal-up"><summary data-i18n="faq.q4">E se eu me atrasar ou precisar cancelar?</summary><p data-i18n="faq.a4">Avise com antecedência pelo WhatsApp para remarcar sem problema.</p></details>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <h2 class="cta__title"><span data-i18n="cta.l1">Pronto pro</span> <em data-i18n="cta.l2">próximo corte?</em></h2>
+      <a href="#booking" class="btn btn--big magnetic"><span data-i18n="hero.cta1">Solicitar disponibilidade</span> <i>→</i></a>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <img src="assets/logo.png" alt="JT Barber" width="72" height="72" />
+        <p><b>JT.BARBER</b><br /><span data-i18n="footer.tag">Barbeiro • Maringá, PR • Brasil</span></p>
+      </div>
+      <div class="footer__col">
+        <h4 data-i18n="footer.nav">Navegação</h4>
+        <a href="#services" data-i18n="nav.services">Serviços</a>
+        <a href="#gallery" data-i18n="nav.gallery">Galeria</a>
+        <a href="#about" data-i18n="nav.about">Sobre</a>
+        <a href="#booking" data-i18n="nav.booking">Disponibilidade</a>
+      </div>
+      <div class="footer__col">
+        <h4 data-i18n="contact.kicker">Contato</h4>
+        <a href="mailto:Toussaintjeffson98@gmail.com">Toussaintjeffson98@gmail.com</a>
+        <a href="https://wa.me/554497547645" target="_blank" rel="noopener">+55 44 9754-7645</a>
+        <a href="https://www.tiktok.com/@jt.barber6" target="_blank" rel="noopener">TikTok</a>
+        <a href="https://www.instagram.com/jefphaka47" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="footer__big" aria-hidden="true">JT BARBER</div>
+    <div class="footer__bottom">
+      <p>© <span id="year"></span> JT Barber. <span data-i18n="footer.rights">Todos os direitos reservados.</span></p>
+      <p class="credit">BY <b>INCONNU BOY SENSEI</b></p>
+    </div>
+  </footer>
+
+  <a class="wa-float magnetic" href="https://wa.me/554497547645" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg viewBox="0 0 32 32" width="28" height="28"><path fill="currentColor" d="M16 3C8.8 3 3 8.8 3 16c0 2.3.6 4.5 1.7 6.4L3 29l6.8-1.8c1.9 1 4 1.6 6.2 1.6 7.2 0 13-5.8 13-13S23.2 3 16 3zm0 23.6c-2 0-3.9-.5-5.6-1.5l-.4-.2-4 1.1 1.1-3.9-.3-.4c-1.1-1.8-1.7-3.8-1.7-5.8C5.1 10 10 5.2 16 5.2S26.9 10 26.9 16 22 26.6 16 26.6zm6-8c-.3-.2-1.9-1-2.2-1.1-.3-.1-.5-.2-.7.2-.2.3-.8 1.1-1 1.3-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.6-1.6-1-.9-1.6-1.9-1.8-2.2-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.3.3-.6.1-.2 0-.4 0-.6l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.5c.2.2 2.4 3.6 5.7 5 .8.3 1.4.6 1.9.7.8.3 1.5.2 2.1.1.6-.1 1.9-.8 2.2-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/></svg>
+  </a>
+
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="i18n.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
