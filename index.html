@@ -53,9 +53,25 @@
         </ul>
       </div>
       <a href="#booking" class="btn btn--sm magnetic" data-scroll><span data-i18n="nav.cta">Agendar</span></a>
-      <button class="burger" aria-label="Menu"><span></span><span></span></button>
+      <button class="burger" aria-label="Menu" aria-controls="mnav" aria-expanded="false"><span></span><span></span></button>
     </div>
   </header>
+
+  <!-- Mobile menu (outside the header so it can cover the full screen) -->
+  <nav class="mnav" id="mnav" aria-label="Menu">
+    <a href="#services" data-scroll><i>01</i><span data-i18n="nav.services">Serviços</span></a>
+    <a href="#styles" data-scroll><i>02</i><span data-i18n="nav.styles">Modelos</span></a>
+    <a href="#about" data-scroll><i>03</i><span data-i18n="nav.about">Sobre</span></a>
+    <a href="#booking" data-scroll><i>04</i><span data-i18n="nav.booking">Disponibilidade</span></a>
+    <a href="#contact" data-scroll><i>05</i><span data-i18n="nav.contact">Contato</span></a>
+    <div class="mnav__socials">
+      <a href="https://wa.me/554497547645" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 32 32"><use href="#i-wa"/></svg></a>
+      <a href="tel:+554497547645" aria-label="Phone"><svg viewBox="0 0 24 24"><use href="#i-phone"/></svg></a>
+      <a href="mailto:Toussaintjeffson98@gmail.com" aria-label="E-mail"><svg viewBox="0 0 24 24"><use href="#i-mail"/></svg></a>
+      <a href="https://www.tiktok.com/@jt.barber6" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24"><use href="#i-tt"/></svg></a>
+      <a href="https://www.instagram.com/jefphaka47" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><use href="#i-ig"/></svg></a>
+    </div>
+  </nav>
 
   <main id="top">
 

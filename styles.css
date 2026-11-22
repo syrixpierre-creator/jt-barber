@@ -82,6 +82,18 @@ body.no-anim .preloader { display: none; }
 body.menu-open .burger span:first-child { top: 21px; transform: rotate(45deg); }
 body.menu-open .burger span:last-child { top: 21px; transform: rotate(-45deg); }
 
+/* ===== Mobile menu ===== */
+.mnav { display: none; position: fixed; inset: 0; z-index: 99; flex-direction: column; justify-content: center; align-items: flex-start; gap: 12px; padding: 90px var(--pad) 40px; background: var(--bg);
+  clip-path: circle(0% at calc(100% - 38px) 38px); visibility: hidden; transition: clip-path .8s var(--ease), visibility 0s .8s; overflow-y: auto; }
+body.menu-open .mnav { clip-path: circle(150% at calc(100% - 38px) 38px); visibility: visible; transition: clip-path .8s var(--ease), visibility 0s; }
+.mnav > a { display: flex; align-items: baseline; gap: 12px; font-family: var(--display); font-size: clamp(42px, 12vw, 72px); line-height: 1.05; text-transform: uppercase; }
+.mnav > a i { font-family: var(--body); font-style: normal; font-size: 13px; color: var(--red); }
+.mnav > a:active span, .mnav > a:hover span { color: var(--red2); }
+.mnav__socials { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 30px; }
+.mnav__socials a { width: 50px; height: 50px; border-radius: 50%; display: grid; place-items: center; border: 1px solid var(--line); }
+.mnav__socials svg { width: 22px; height: 22px; }
+body.menu-open .header { background: transparent; border-color: transparent; backdrop-filter: none; -webkit-backdrop-filter: none; transform: none !important; }
+
 /* ===== Buttons ===== */
 .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 17px 30px; border-radius: 60px; background: var(--red); color: #fff; font-weight: 700; font-size: 15px;
   position: relative; overflow: hidden; isolation: isolate; transition: color .4s var(--ease); will-change: transform; white-space: nowrap; }
@@ -347,10 +359,8 @@ body.no-anim .reel__caption { opacity: 1; }
 @media (max-width: 900px) {
   .burger { display: block; }
   .header .btn--sm { display: none; }
-  .nav { position: fixed; inset: 0; z-index: -1; flex-direction: column; justify-content: center; align-items: flex-start; padding: 0 var(--pad); gap: 14px; background: var(--bg);
-    font-family: var(--display); font-size: clamp(44px, 12vw, 72px); font-weight: 400; letter-spacing: 0; clip-path: circle(0% at calc(100% - 38px) 38px); transition: clip-path .8s var(--ease); }
-  .nav a i { font-family: var(--body); font-size: 13px; }
-  body.menu-open .nav { clip-path: circle(150% at calc(100% - 38px) 38px); }
+  .nav { display: none; }
+  .mnav { display: flex; }
   body.menu-open { overflow: hidden; }
   .services__pin { min-height: 0; }
   .services__track { flex-direction: column; width: auto; }

@@ -183,14 +183,15 @@
   }
   $$('a[data-scroll]').forEach(a => a.addEventListener('click', e => {
     const id = a.getAttribute('href'); if (!id || id[0] !== '#') return;
-    e.preventDefault(); document.body.classList.remove('menu-open'); lenis && lenis.start();
+    e.preventDefault(); document.body.classList.remove('menu-open'); $('.burger').setAttribute('aria-expanded', false); lenis && lenis.start();
     id === '#top' ? (lenis ? lenis.scrollTo(0) : scrollTo({ top: 0, behavior: 'smooth' })) : scrollToEl(id);
   }));
   $('[data-top]').addEventListener('click', () => lenis ? lenis.scrollTo(0, { duration: 2 }) : scrollTo({ top: 0, behavior: 'smooth' }));
   $('.burger').addEventListener('click', () => {
     const open = document.body.classList.toggle('menu-open');
+    $('.burger').setAttribute('aria-expanded', open);
     if (lenis) open ? lenis.stop() : lenis.start();
-    if (open && ANIM) gsap.fromTo('.nav a', { yPercent: 100, opacity: 0 }, { yPercent: 0, opacity: 1, stagger: .06, duration: .7, ease: 'power4.out', delay: .2 });
+    if (open && ANIM) gsap.fromTo('.mnav > a, .mnav__socials', { yPercent: 100, opacity: 0 }, { yPercent: 0, opacity: 1, stagger: .06, duration: .7, ease: 'power4.out', delay: .2 });
   });
 
   /* header: background + hide on scroll down */
